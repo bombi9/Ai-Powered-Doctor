@@ -1,8 +1,11 @@
 :root {
-    --my-bg: rgb(21, 12, 91);
-    --btn: rgb(122, 111, 241);
-    --btn-hover: rgb(95, 86, 189);
+    /* --my-bg: rgb(21, 12, 91); */
+    --my-bg: rgb(22, 21, 31);
+    /* --btn: rgb(122, 111, 241); */
+    --btn: rgb(126, 131, 212);
+    --btn-hover: rgb(52, 47, 107);
     --font: rgb(245, 245, 245);
+    --back-hover: rgba(240, 248, 255, 0.4);
 }
 
 * {
@@ -59,8 +62,8 @@ html, body {
     background-repeat: no-repeat;
     z-index: 999;
     padding: 20px;
-    backdrop-filter: blur(6px); 
-    -webkit-backdrop-filter: blur(6px); 
+    backdrop-filter: blur(12px); 
+    -webkit-backdrop-filter: blur(12px); 
 }
 
 .navgrid {
@@ -116,9 +119,12 @@ svg {
     margin-top: auto;
 }
 
+.bi { transition: 0.3s ease-in-out;}
+
 .bi:hover {
-    background-color: rgba(240, 248, 255, 0.4);
+    background-color: var(--back-hover);
+    background-size: 2em;
     color: var(--btn-hover);
     border-radius: 50%;
-    background-size: contain;
+    cursor: pointer;
 }
